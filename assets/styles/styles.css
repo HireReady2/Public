@@ -296,7 +296,144 @@ body {
 }
 
 /* Planes */
+.planes {
+    padding: 100px 20px;
+    background: linear-gradient(180deg, var(--light-green-bg) 0%, #E8F0ED 100%);
+}
 
+.planes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+
+.plan-card {
+    background-color: var(--text-light);
+    padding: 2.5rem 2rem;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(45, 106, 95, 0.1);
+    transition: all 0.4s ease;
+    position: relative; /* Para el efecto de borde superior */
+    overflow: hidden; /* Para que el borde no sobresalga*/
+}
+
+.plan-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, var(--accent-green), var(--secondary-green));
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+}
+
+.plan-card:hover::before {
+    transform: scaleX(1);
+}
+
+.plan-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(45, 106, 95, 0.2);
+}
+
+.plan-icon {
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.plan-card:hover .plan-icon {
+    transform: scale(1.1);
+}
+
+.plan-icon img {
+    width: 120px;
+    height: 120px;
+}
+
+.plan-name {
+    font-size: 1.8rem;
+    color: var(--primary-green);
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.plan-features {
+    list-style: none;
+    margin-bottom: 2rem;
+    text-align: left;
+    padding-left: 1rem;
+}
+
+.plan-features li {
+    padding: 0.7rem 0;
+    color: #555;
+    font-size: 1.05rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+.plan-features li:before {
+    content: "✓";
+    color: var(--accent-green);
+    font-weight: bold;
+    margin-right: 0.8rem;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.plan-price {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--primary-green);
+    margin-bottom: 1.5rem;
+}
+
+.btn-plan {
+    background: linear-gradient(135deg, var(--primary-green) 0%, var(--secondary-green) 100%); /* Degradado de verde */
+    color: var(--text-light);
+    padding: 0.9rem 2.5rem;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    box-shadow: 0 3px 12px rgba(45, 106, 95, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-plan::before {
+    position: relative; /* Efecto de fondo en hover */
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, var(--accent-green) 0%, var(--primary-green) 100%);
+    transition: left 0.4s ease;
+}
+
+.btn-plan:hover::before {
+    left: 0;
+}
+
+.btn-plan span {
+    position: relative;
+    z-index: 1;
+}
+
+.btn-plan:hover {
+    transform: translateY(-5px); /* Eleva el botón al pasar el ratón por encima*/
+    box-shadow: 0 6px 20px rgba(45, 106, 95, 0.4);
+}
+
+.btn-plan:active { /* Efecto, al hacer clic se baja un poquito*/
+    transform: translateY(-1px);
+}
 
 /* Testimonios */
 .testimonios {

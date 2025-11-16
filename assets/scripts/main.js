@@ -58,7 +58,16 @@ const observer = new IntersectionObserver((entries) => {
 
 
 // Aplicar animación a cards de planes y testimonios
+document.addEventListener('DOMContentLoaded', () => {
+    const cards = document.querySelectorAll('.plan-card, .testimonio-card');
 
+    cards.forEach((card, index) => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(30px)';
+        card.style.transition = `opacity 0.5s ease ${index * 0.1}s, transform 0.5s ease ${index * 0.1}s`;
+        observer.observe(card);
+    });
+});
 
 // Cerrar menú móvil al redimensionar ventana
 let windowWidth = window.innerWidth;
