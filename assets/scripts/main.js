@@ -48,5 +48,11 @@ window.addEventListener('scroll', () => {
 
 
 // Cerrar menú móvil al redimensionar ventana
-
+let windowWidth = window.innerWidth;
+window.addEventListener('resize', () => {
+    if (window.innerWidth > 968 && windowWidth <= 968) {
+        navMenu.classList.remove('active');
+    }
+    windowWidth = window.innerWidth;
+});
 
