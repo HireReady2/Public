@@ -29,7 +29,41 @@ El objetivo de este challenge es implementar una versión inicial de la Landing 
 
 ---
 
-## 
+## Funcionalidades implementadas en este avance
+
+- Sección **Hero** con descripción del producto y CTA (“Probar ahora”).
+- Sección **Testimonios** con tarjetas e imágenes reales (formato PNG).
+- Estilos organizados en `styles.css` siguiendo buenas prácticas.
+- Estructura semántica en HTML5.
+- Archivos organizados según lo solicitado por el profesor.
+- Implementación del control de versiones:
+    - Rama `main` → versión estable.
+    - Rama `develop` → rama activa para avances.
+
+---
+
+## Tecnologías utilizadas
+
+- **HTML5**
+- **CSS3**
+- **JavaScript**
+- **Git & GitHub**
+- **WebStorm (IDE)**
+
+---
+
+## Próximos pasos
+
+- Implementar animaciones y transiciones.
+- Agregar nuevas secciones requeridas por la entrega final.
+- Optimizar el diseño responsive.
+- Crear ramas *feature/* bajo GitFlow para nuevas funcionalidades.
+
+---
+
+## Notas adicionales
+
+Este repositorio forma parte del desarrollo académico del curso y servirá como base para las siguientes entregas.
 
 
 
