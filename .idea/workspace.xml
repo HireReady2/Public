@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ca11416-06fb-4671-9a8f-2f34e9397e2b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scripts/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scripts/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/styles/r&amp;r.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/r&amp;r.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/r&amp;r.html" beforeDir="false" afterPath="$PROJECT_DIR$/r&amp;r.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,7 +52,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "feature/ryr",
+    "git-widget-placeholder": "develop",
     "last_opened_file_path": "C:/Users/Aurora/WebstormProjects/Public",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
@@ -89,7 +86,7 @@
       <workItem from="1763245236275" duration="1825000" />
       <workItem from="1763256838743" duration="9138000" />
       <workItem from="1763320942581" duration="6370000" />
-      <workItem from="1764363781919" duration="43494000" />
+      <workItem from="1764363781919" duration="43842000" />
     </task>
     <servers />
   </component>

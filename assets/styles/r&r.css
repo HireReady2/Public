@@ -21,22 +21,6 @@
     background-color: var(--text-light);
 }
 
-.retroalimentacion-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 40px;
-}
-
-.retroalimentacion-title-wrapper {
-    flex: 1;
-}
-
-.retroalimentacion-btn {
-    flex-shrink: 0;
-    margin-top: 2rem;
-}
-
 .retroalimentacion-content {
     display: flex;
     align-items: flex-start;
