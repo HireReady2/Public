@@ -34,6 +34,7 @@
 
 .retroalimentacion-btn {
     flex-shrink: 0;
+    margin-top: 2rem;
 }
 
 .retroalimentacion-content {
