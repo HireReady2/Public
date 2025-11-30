@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ca11416-06fb-4671-9a8f-2f34e9397e2b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/assets/styles/r&amp;r.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/r&amp;r.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/r&amp;r.html" beforeDir="false" afterPath="$PROJECT_DIR$/r&amp;r.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coach.html" beforeDir="false" afterPath="$PROJECT_DIR$/coach.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +51,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "develop",
+    "git-widget-placeholder": "feature/flujoE",
     "last_opened_file_path": "C:/Users/Aurora/WebstormProjects/Public",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
