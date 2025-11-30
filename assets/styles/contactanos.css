@@ -1,0 +1,117 @@
+/* Contactanos */
+.contactanos {
+    padding: 100px 20px;
+    background-color: var(--text-light);
+}
+
+.section-title-contact {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--primary-green);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    position: relative;
+}
+
+.contact-form {
+    background: #dceae7;
+    padding: 30px;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.contact-form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    font-size: 16px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1.8px solid #3c8b80;
+    border-radius: 5px;
+    outline: none;
+    font-size: 15px;
+    background: white;
+}
+
+.field-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 22px;
+}
+
+.contact-form textarea {
+    height: 230px;
+    resize: none;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.check-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+}
+
+.check-item input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.checkbox-group label {
+    font-weight: normal;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-group a {
+    color: #005e52;
+    text-decoration: underline;
+}
+
+.contact-submit {
+    grid-column: 2 / 3;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.btn-enviar {
+    background: #12796a;
+    color: white;
+    border: none;
+    padding: 12px 60px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-enviar:hover {
+    background: #0f5f54;
+}
+
+@media(max-width: 780px) {
+    .contact-form {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-submit {
+        grid-column: 1 / -1;
+        text-align: center;
+    }
+}
