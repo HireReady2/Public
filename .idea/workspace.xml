@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0ca11416-06fb-4671-9a8f-2f34e9397e2b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/images/PersonaPensando.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/facebook.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/instagram.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/linkedin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/scripts/coach.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/scripts/contactanos.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/scripts/preguntas.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/styles/coach.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/styles/contactanos.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/styles/footer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/styles/header.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/styles/preguntas.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coach.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contactanos.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/header.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/preguntas.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scripts/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scripts/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "AuroraaPr"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/HireReady2/Public.git",
+    "accountId": "fa673562-acff-4dfd-8ce6-9cc21971080c"
+  }
+}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="35X8kyvDoNTUYaproebtENccacH" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "feature/preguntas-frecuentes",
+    "last_opened_file_path": "C:/Users/Aurora/WebstormProjects/Public",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Aurora\WebstormProjects\Public" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-WS-252.27397.92" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0ca11416-06fb-4671-9a8f-2f34e9397e2b" name="Changes" comment="" />
+      <created>1763245202849</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1763245202849</updated>
+      <workItem from="1763245204218" duration="31000" />
+      <workItem from="1763245236275" duration="1825000" />
+      <workItem from="1763256838743" duration="9138000" />
+      <workItem from="1763320942581" duration="6370000" />
+      <workItem from="1764363781919" duration="30760000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HireReady - Simula tu entrevista laboral con IA</title>
+    <!--favicon para el ícono de ventana de la página web-->
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.ico">
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <link rel="stylesheet" href="assets/styles/header.css">
+    <link rel="stylesheet" href="assets/styles/footer.css">
+    <link rel="stylesheet" href="assets/styles/contactanos.css">
+</head>
+<body>
+
+<div id="header"></div>
+
+<section class="contactanos" id="contactanos">
+    <div class="container">
+        <h2 class="section-title-contact">Contáctanos</h2>
+
+        <div class="contactanos-content">
+            <form class="contact-form" id="contactForm">
+
+                <div class="contact-left">
+                    <div class="field-group">
+                        <label>Nombre(s):</label>
+                        <input type="text" name="nombres" placeholder="Ingrese su(s) nombre(s)" required>
+                    </div>
+
+                    <div class="field-group">
+                        <label>Apellidos:</label>
+                        <input type="text" name="apellidos" placeholder="Ingrese sus apellidos" required>
+                    </div>
+
+                    <div class="field-group">
+                        <label>Correo:</label>
+                        <input type="email" name="correo" placeholder="correoejemplo@dirección.com" required>
+                    </div>
+
+                    <div class="checkbox-group">
+                        <label class="check-item">
+                            <input type="checkbox" name="tyc" required>
+                            Acepto los <a href="#">términos y condiciones</a>
+                        </label>
+
+                        <label class="check-item">
+                            <input type="checkbox" name="privacidad" required>
+                            Acepto las <a href="#">políticas de privacidad</a>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="contact-right">
+                    <label>Mensaje:</label>
+                    <textarea name="mensaje" placeholder="Redáctanos tu mensaje . . ." required></textarea>
+
+                    <div class="contact-submit">
+                        <button type="submit" class="btn-enviar">Enviar</button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</section>
+
+<div id="footer"></div>
+
+<script src="assets/scripts/main.js"></script>
+<script src="assets/scripts/contactanos.js"></script>
+</body>
+</html>

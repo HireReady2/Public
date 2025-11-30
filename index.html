@@ -7,37 +7,12 @@
     <!--favicon para el ícono de ventana de la página web-->
     <link rel="icon" type="image/png" sizes="16x16" href="favicon.ico">
     <link rel="stylesheet" href="assets/styles/styles.css">
+    <link rel="stylesheet" href="assets/styles/header.css">
+    <link rel="stylesheet" href="assets/styles/footer.css">
 </head>
 <body>
 
-<!-- Header -->
-<header class="header">
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-wrapper">
-                <div class="logo">
-                    <span class="logo-icon"><img alt="logo" src="assets/images/logo.png"></span>
-                    <span class="logo-text">HireReady</span>
-                </div>
-
-                <!-- posible hamburguesa (en evaluacion) -->
-                <button class="menu-toggle" id="menuToggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-
-                <ul class="nav-menu" id="navMenu">
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#caracteristicas">Características</a></li>
-                    <li><a href="#planes">Planes</a></li>
-                    <li><a href="#testimonios">Testimonios</a></li>
-                    <li><a href="#" class="btn-acceder">Acceder</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-</header>
+<div id="header"></div>
 
 <!-- Hero Section -->
 <section class="hero" id="inicio">
@@ -66,22 +41,22 @@
             <div class="caracteristicas-list">
                 <div class="caracteristica-item">
                     <h3>Simulación en tiempo real:</h3>
-                    <p>práctica dinámica con un asistente virtual adaptado a tu sector profesional.</p>
+                    <p>Práctica dinámica con un asistente virtual adaptado a tu sector profesional.</p>
                 </div>
 
                 <div class="caracteristica-item">
                     <h3>Análisis de voz y lenguaje:</h3>
-                    <p>evaluación precisa del tono, vocabulario y claridad de tus respuestas.</p>
+                    <p>Evaluación precisa del tono, vocabulario y claridad de tus respuestas.</p>
                 </div>
 
                 <div class="caracteristica-item">
                     <h3>Feedback inteligente:</h3>
-                    <p>recibe observaciones inmediatas con sugerencias específicas de mejora.</p>
+                    <p>Recibe observaciones inmediatas con sugerencias específicas de mejora.</p>
                 </div>
 
                 <div class="caracteristica-item">
                     <h3>Indicadores de progreso:</h3>
-                    <p>visualiza tus avances y tus fortalezas a través de métricas comprensibles.</p>
+                    <p>Visualiza tus avances y tus fortalezas a través de métricas comprensibles.</p>
                 </div>
             </div>
         </div>
@@ -189,43 +164,7 @@
     </div>
 </section>
 
-<!-- Footer -->
-<footer class="footer">
-    <div class="container">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Ayuda</h3>
-                <ul>
-                    <li><a href="#">Centro de soporte</a></li>
-                    <li><a href="#">Guías de uso</a></li>
-                    <li><a href="#">Recuperar acceso</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-section">
-                <h3>Preguntas frecuentes</h3>
-                <ul>
-                    <li><a href="#">¿Cómo funciona la IA?</a></li>
-                    <li><a href="#">¿Puedo usar HireReady gratis?</a></li>
-                    <li><a href="#">¿Qué planes ofrecen?</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-section">
-                <h3>Contacto</h3>
-                <ul>
-                    <li>correo: soporte@hireready.com</li>
-                    <li>Teléfono: +51 987 654 321</li>
-                    <li>Dirección: Lima, Perú</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <p>&copy; 2025 HireReady. Todos los derechos reservados.</p>
-        </div>
-    </div>
-</footer>
+<div id="footer"></div>
 
 <script src="assets/scripts/main.js"></script>
 </body>
