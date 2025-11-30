@@ -1,0 +1,377 @@
+.section-title-r\&r {
+    font-size: 2.5rem;
+    color: var(--primary-green);
+    margin-bottom: 2rem;
+    margin-top: -1.5rem;
+    font-weight: 700;
+    position: relative;
+}
+
+.r\&r-name {
+    font-size: 1.8rem;
+    color: var(--primary-green);
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    font-weight: 700;
+}
+
+/* Retroalimentacion */
+.retroalimentacion {
+    padding: 100px 20px;
+    background-color: var(--text-light);
+}
+
+.retroalimentacion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.retroalimentacion-title-wrapper {
+    flex: 1;
+}
+
+.retroalimentacion-btn {
+    flex-shrink: 0;
+}
+
+.retroalimentacion-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 60px;
+    margin-top: 40px;
+}
+
+.retroalimentacion-list {
+    flex: 1;
+}
+
+.retroalimentacion-bullets {
+    line-height: 1.8;
+    padding-left: 20px;
+}
+
+.retroalimentacion-bullets li {
+    margin-bottom: 1.5rem;
+}
+
+.retroalimentacion-image {
+    flex: 1;
+}
+
+.retroalimentacion-image img {
+    width: 100%;
+    height: auto;
+}
+
+/* Recomendaciones */
+.recomendaciones {
+    padding: 100px 20px;
+    background-color: var(--text-light);
+    margin-top: -100px;
+}
+
+.recomendaciones-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 60px;
+    margin-top: 40px;
+}
+
+.recomendaciones-image {
+    flex: 1;
+    margin-top: -40px;
+}
+
+.recomendaciones-image img {
+    width: 340px;
+    height: auto;
+}
+
+.recomendaciones-list {
+    flex: 1;
+}
+
+.recomendaciones-bullets {
+    line-height: 1.8;
+    padding-left: 20px;
+}
+
+.recomendaciones-bullets li {
+    margin-bottom: 1.5rem;
+}
+
+/* Evolucion */
+.evolucion {
+    padding: 100px 20px;
+    background-color: var(--text-light);
+    margin-top: -100px;
+    text-align: center;
+}
+
+.evolucion-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.evolucion-text {
+    max-width: 800px;
+}
+
+.evolucion-text p {
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.evolucion-image {
+    max-width: 700px;
+}
+
+.evolucion-image img {
+    width: 100%;
+    height: auto;
+}
+
+/* Control */
+.control {
+    padding: 100px 20px;
+    background-color: var(--text-light);
+    margin-top: -100px;
+}
+
+.control-name {
+    font-size: 1.8rem;
+    color: var(--primary-green);
+    margin-bottom: 2rem;
+    margin-top: -1rem;
+    font-weight: 700;
+}
+
+.control-card-name {
+    color: var(--primary-green);
+}
+
+.control-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+
+.control-card {
+    background-color: var(--text-light);
+    padding: 2.5rem 2rem;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: all 0.4s ease;
+    border: 2px solid transparent;
+}
+
+.control-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 35px rgba(45, 106, 95, 0.15);
+    border-color: var(--accent-green);
+}
+
+.control-image {
+    margin: 0 auto 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.control-card:hover .control-image {
+    transform: scale(1.05);
+}
+
+.control-image img {
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+    margin: 0 auto;
+    display: block;
+}
+
+.control-text {
+    line-height: 1.8;
+}
+
+/* Nivel */
+.nivel {
+    padding: 100px 20px;
+    background-color: var(--text-light);
+    margin-top: -100px;
+}
+
+.nivel-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 60px;
+    margin-top: 40px;
+}
+
+.nivel-text {
+    flex: 1;
+}
+
+.nivel-text p {
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.nivel-bullets {
+    line-height: 1.8;
+    padding-left: 20px;
+}
+
+.nivel-bullets li {
+    margin-bottom: 1.5rem;
+}
+
+.nivel-image {
+    flex: 1;
+}
+
+.nivel-image img {
+    width: 100%;
+    height: auto;
+}
+
+/* Recursos */
+.recursos {
+    padding: 100px 20px;
+    background-color: var(--text-light);
+    margin-top: -100px;
+}
+
+.recursos-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 60px;
+    margin-top: 40px;
+}
+
+.recursos-image {
+    flex: 1;
+}
+
+.recursos-image img {
+    width: 340px;
+    height: auto;
+}
+
+.recursos-text {
+    flex: 1;
+}
+
+.recursos-text p {
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.recursos-bullets {
+    line-height: 1.8;
+    padding-left: 20px;
+}
+
+.recursos-bullets li {
+    margin-bottom: 1.5rem;
+}
+
+/* Sistema */
+.sistema {
+    padding: 100px 20px;
+    background-color: var(--text-light);
+    margin-top: -100px;
+    text-align: center;
+}
+
+.sistema .evolucion-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.sistema .evolucion-text {
+    max-width: 800px;
+}
+
+.sistema .evolucion-text p {
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.sistema .evolucion-image {
+    max-width: 600px;
+    margin-bottom: 40px;
+}
+
+.sistema .evolucion-image img {
+    width: 100%;
+    height: auto;
+}
+
+/* Estadisticas */
+.estadisticas {
+    padding: 80px 20px;
+    background: linear-gradient(180deg, var(--light-green-bg) 0%, #E8F0ED 100%);
+    margin-top: -100px;
+}
+
+.estadisticas-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    margin-top: 20px;
+}
+
+.estadistica-item {
+    text-align: center;
+}
+
+.estadistica-numero {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.estadistica-text {
+    font-size: 1.3rem;
+    color: var(--primary-green);
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    .retroalimentacion-content,
+    .recomendaciones-content,
+    .evolucion-content,
+    .nivel-content,
+    .recursos-content {
+        flex-direction: column;
+    }
+
+    .control-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .estadisticas-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .estadistica-numero {
+        font-size: 2.5rem;
+    }
+
+    .estadistica-text {
+        font-size: 1rem;
+    }
+}
