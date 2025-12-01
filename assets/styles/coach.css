@@ -1,5 +1,3 @@
-/* Presentation */
-
 .FlujoE {
     display: flex;
     align-items: center;
@@ -7,7 +5,6 @@
     gap: 10rem;
     padding: 6rem 2rem 4rem;
 }
-
 
 .FlujoE-title {
     font-size: 3rem;
@@ -42,8 +39,8 @@
     position: relative;
     padding-bottom: 1rem;
 }
-/* Servicios */
 
+/* Servicios */
 .servicios {
     padding: 4rem 0;
     text-align: center;
@@ -128,9 +125,7 @@
     font-weight: 600;
 }
 
-
 /* Carrusel */
-
 .seccion-title {
     font-size: 32px;
     font-weight: 700;
@@ -152,18 +147,18 @@
     width: 100%;
     max-width: 1100px;
     margin: 0 auto;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 .carousel-track {
     display: flex;
     transition: transform 0.5s ease-in-out;
-    width: 100%; 
+    width: 100%;
 }
 
 .carousel-slide {
     flex: 0 0 100%;
-    min-width: 100%; 
+    min-width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -171,7 +166,6 @@
     padding: 20px;
     box-sizing: border-box;
 }
-
 
 .carousel-slide .slide-content {
     max-width: 350px;
@@ -212,7 +206,7 @@
 .carousel-btn {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);   
+    transform: translateY(-50%);
     width: 55px;
     height: 55px;
     display: flex;
@@ -224,7 +218,7 @@
     border: none;
     padding: 0;
     outline: none;
-    z-index: 10; 
+    z-index: 10;
 }
 
 .carousel-btn img {
@@ -243,9 +237,10 @@
     right: 30px;
 }
 
-.carousel-btn.prev img{
+.carousel-btn.prev img {
     transform: rotate(0deg);
 }
+
 .carousel-btn.next img {
     transform: rotate(180deg);
 }
@@ -260,7 +255,7 @@
 }
 
 .carousel-slide.slide-vertical .slide-img.arrow {
-    width: 100px; 
+    width: 100px;
 }
 
 .carousel-slide.slide-vertical .slide-content.centered {
@@ -277,7 +272,6 @@
 }
 
 /* Beneficios */
-
 .Beneficios {
     max-width: 950px;
     margin: 0 auto;
@@ -374,3 +368,565 @@
     opacity: 0.9;
 }
 
+/* ============================================ */
+/* RESPONSIVE DESIGN */
+/* ============================================ */
+
+/* Tablets grandes y pantallas medianas (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .FlujoE {
+        gap: 5rem;
+        padding: 4rem 2rem 3rem;
+    }
+
+    .FlujoE-title {
+        font-size: 2.5rem;
+    }
+
+    .FlujoE img {
+        width: 320px;
+    }
+
+    .Beneficios {
+        gap: 50px;
+        padding: 80px 40px;
+    }
+
+    .Beneficios img {
+        width: 260px;
+    }
+}
+
+/* Tablets (max-width: 900px) */
+@media (max-width: 900px) {
+    .FlujoE {
+        flex-direction: column;
+        gap: 3rem;
+        padding: 3rem 2rem;
+        text-align: center;
+    }
+
+    .FlujoE-title {
+        font-size: 2.2rem;
+        margin-top: 0;
+    }
+
+    .FlujoE-description {
+        font-size: 1.1rem;
+    }
+
+    .FlujoE img {
+        width: 300px;
+        max-width: 80%;
+    }
+
+    .section-title-coach {
+        font-size: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    /* Servicios */
+    .servicios-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .servicios .section-title {
+        font-size: 2rem;
+    }
+
+    /* Carrusel */
+    .seccion-title {
+        font-size: 28px;
+    }
+
+    .carousel-slide {
+        gap: 30px;
+        padding: 15px;
+    }
+
+    .carousel-slide .slide-content {
+        max-width: 300px;
+    }
+
+    .carousel-slide .slide-content h3 {
+        font-size: 22px;
+    }
+
+    .slide-img {
+        width: 220px;
+    }
+
+    .carousel-btn.prev {
+        left: 15px;
+    }
+
+    .carousel-btn.next {
+        right: 15px;
+    }
+
+    /* Beneficios */
+    .Beneficios {
+        gap: 40px;
+        padding: 60px 30px;
+    }
+
+    .Beneficios img {
+        width: 240px;
+    }
+
+    .Beneficios-title {
+        font-size: 24px;
+    }
+
+    .beneficio-item h3 {
+        font-size: 18px;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 50px 20px 25px;
+    }
+
+    .footer-content {
+        gap: 3rem;
+    }
+}
+
+/* Móviles grandes y tablets pequeñas (max-width: 768px) */
+@media (max-width: 768px) {
+    .FlujoE {
+        gap: 2rem;
+        padding: 2.5rem 1.5rem;
+    }
+
+    .FlujoE-title {
+        font-size: 1.8rem;
+    }
+
+    .FlujoE-description {
+        font-size: 1rem;
+    }
+
+    .FlujoE img {
+        width: 260px;
+        max-width: 90%;
+    }
+
+    .section-title-coach {
+        font-size: 1.8rem;
+        margin-bottom: 2.5rem;
+    }
+
+    /* Servicios */
+    .servicios {
+        padding: 3rem 0;
+    }
+
+    .servicios .container {
+        padding: 0 1.5rem;
+    }
+
+    .servicios .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .servicios-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        max-width: 400px;
+    }
+
+    .servicio-card {
+        padding: 2.5rem 2rem;
+        max-width: 100%;
+    }
+
+    .servicio-icon img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .servicio-title {
+        font-size: 1.3rem;
+    }
+
+    /* Carrusel */
+    .carrusel {
+        padding: 40px 0;
+    }
+
+    .seccion-title {
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+
+    .carousel-wrapper {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .carousel-slide {
+        flex-direction: column;
+        gap: 25px;
+        padding: 15px 10px;
+    }
+
+    .carousel-slide .slide-content {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .carousel-slide .slide-content h3 {
+        font-size: 20px;
+    }
+
+    .carousel-slide .slide-content p {
+        font-size: 15px;
+    }
+
+    .slide-img {
+        width: 200px;
+    }
+
+    .slide-img-group {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .slide-img.small {
+        width: 180px;
+    }
+
+    .slide-img.arrow {
+        width: 50px;
+        transform: rotate(90deg);
+    }
+
+    .carousel-btn {
+        width: 45px;
+        height: 45px;
+    }
+
+    .carousel-btn img {
+        width: 40px;
+    }
+
+    .carousel-btn.prev {
+        left: 5px;
+    }
+
+    .carousel-btn.next {
+        right: 5px;
+    }
+
+    .carousel-slide.slide-vertical .slide-img.small {
+        width: 200px;
+    }
+
+    .carousel-slide.slide-vertical .slide-img.arrow {
+        width: 80px;
+    }
+
+    /* Beneficios */
+    .Beneficios {
+        flex-direction: column;
+        gap: 30px;
+        padding: 50px 20px;
+        text-align: center;
+    }
+
+    .Beneficios img {
+        width: 220px;
+        order: -1;
+    }
+
+    .Beneficios-title {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .beneficio-item {
+        text-align: left;
+        gap: 12px;
+    }
+
+    .beneficio-item h3 {
+        font-size: 17px;
+    }
+
+    .beneficio-item p {
+        font-size: 14px;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 40px 20px 20px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+        text-align: center;
+    }
+
+    .footer-section h3 {
+        font-size: 1.3rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .footer-section a:hover {
+        transform: translateX(0);
+    }
+}
+
+/* Móviles estándar (max-width: 480px) */
+@media (max-width: 480px) {
+    .FlujoE {
+        padding: 2rem 1rem;
+        gap: 1.5rem;
+    }
+
+    .FlujoE-title {
+        font-size: 1.5rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .FlujoE-description {
+        font-size: 0.95rem;
+    }
+
+    .FlujoE img {
+        width: 220px;
+    }
+
+    .section-title-coach {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    /* Servicios */
+    .servicios {
+        padding: 2.5rem 0;
+    }
+
+    .servicios .container {
+        padding: 0 1rem;
+    }
+
+    .servicios .section-title {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .servicios-grid {
+        gap: 1.5rem;
+    }
+
+    .servicio-card {
+        padding: 2rem 1.5rem;
+    }
+
+    .servicio-icon img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .servicio-title {
+        font-size: 1.2rem;
+    }
+
+    /* Carrusel */
+    .carrusel {
+        padding: 30px 0;
+    }
+
+    .seccion-title {
+        font-size: 20px;
+        margin-bottom: 20px;
+        padding: 0 1rem;
+    }
+
+    .carousel-slide {
+        gap: 20px;
+        padding: 10px 5px;
+    }
+
+    .carousel-slide .slide-content h3 {
+        font-size: 18px;
+    }
+
+    .carousel-slide .slide-content p {
+        font-size: 14px;
+    }
+
+    .slide-img {
+        width: 170px;
+    }
+
+    .slide-img.small {
+        width: 150px;
+    }
+
+    .slide-img.arrow {
+        width: 40px;
+    }
+
+    .carousel-btn {
+        width: 38px;
+        height: 38px;
+    }
+
+    .carousel-btn img {
+        width: 32px;
+    }
+
+    .carousel-slide.slide-vertical .slide-img.small {
+        width: 170px;
+    }
+
+    .carousel-slide.slide-vertical .slide-img.arrow {
+        width: 60px;
+    }
+
+    /* Beneficios */
+    .Beneficios {
+        padding: 40px 15px;
+        gap: 25px;
+    }
+
+    .Beneficios img {
+        width: 180px;
+    }
+
+    .Beneficios-title {
+        font-size: 20px;
+        margin-bottom: 18px;
+    }
+
+    .beneficio-item {
+        gap: 10px;
+        margin-bottom: 18px;
+    }
+
+    .beneficio-item img {
+        width: 18px;
+    }
+
+    .beneficio-item h3 {
+        font-size: 16px;
+    }
+
+    .beneficio-item p {
+        font-size: 13px;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 35px 15px 20px;
+    }
+
+    .footer-content {
+        gap: 2rem;
+    }
+
+    .footer-section h3 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .footer-section li {
+        margin-bottom: 0.8rem;
+        font-size: 0.95rem;
+    }
+
+    .footer-bottom {
+        padding-top: 1.5rem;
+        font-size: 0.85rem;
+    }
+}
+
+/* Móviles pequeños (max-width: 360px) */
+@media (max-width: 360px) {
+    .FlujoE {
+        padding: 1.5rem 0.8rem;
+    }
+
+    .FlujoE-title {
+        font-size: 1.3rem;
+    }
+
+    .FlujoE-description {
+        font-size: 0.9rem;
+    }
+
+    .FlujoE img {
+        width: 190px;
+    }
+
+    .section-title-coach {
+        font-size: 1.3rem;
+    }
+
+    .servicios .section-title {
+        font-size: 1.3rem;
+    }
+
+    .servicio-card {
+        padding: 1.8rem 1.2rem;
+    }
+
+    .servicio-icon img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .servicio-title {
+        font-size: 1.1rem;
+    }
+
+    .seccion-title {
+        font-size: 18px;
+    }
+
+    .carousel-slide .slide-content h3 {
+        font-size: 16px;
+    }
+
+    .carousel-slide .slide-content p {
+        font-size: 13px;
+    }
+
+    .slide-img {
+        width: 150px;
+    }
+
+    .slide-img.small {
+        width: 130px;
+    }
+
+    .Beneficios {
+        padding: 35px 10px;
+    }
+
+    .Beneficios img {
+        width: 160px;
+    }
+
+    .Beneficios-title {
+        font-size: 18px;
+    }
+
+    .beneficio-item h3 {
+        font-size: 15px;
+    }
+
+    .beneficio-item p {
+        font-size: 12px;
+    }
+
+    .footer-section h3 {
+        font-size: 1.1rem;
+    }
+}

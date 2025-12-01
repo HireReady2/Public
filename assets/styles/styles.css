@@ -399,6 +399,18 @@ body {
 }
 
 @media (max-width: 768px) {
+
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+    .scenario-phones {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .save-flow {
+        flex-direction: column;
+    }
+
     .caracteristicas-content {
         flex-direction: column;
     }
@@ -406,4 +418,28 @@ body {
     .planes-grid, .testimonios-grid {
         grid-template-columns: 1fr;
     }
+
+}
+
+@media (max-width: 768px) {
+
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+    .scenario-phones {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .save-flow {
+        flex-direction: column;
+    }
+
+    .caracteristicas-content {
+        flex-direction: column;
+    }
+
+    .planes-grid, .testimonios-grid {
+        grid-template-columns: 1fr;
+    }
+
 }
