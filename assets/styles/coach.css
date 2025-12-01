@@ -319,55 +319,20 @@
     color: var(--text-dark);
 }
 
-/* Footer */
-.footer {
-    background: linear-gradient(135deg, var(--primary-green) 0%, var(--secondary-green) 100%);
-    color: var(--text-light);
-    padding: 70px 20px 30px;
-}
+@media (max-width: 768px) {
 
-.footer-content {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 4rem;
-    margin-bottom: 3rem;
-}
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+    .scenario-phones {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .save-flow {
+        flex-direction: column;
+    }
 
-.footer-section h3 {
-    margin-bottom: 1.5rem;
-    font-size: 1.4rem;
-    font-weight: 700;
 }
-
-.footer-section ul {
-    list-style: none;
-}
-
-.footer-section li {
-    margin-bottom: 1rem;
-}
-
-.footer-section a {
-    color: var(--text-light);
-    text-decoration: none;
-    opacity: 0.9;
-    transition: all 0.3s ease;
-    display: inline-block;
-}
-
-.footer-section a:hover {
-    opacity: 1;
-    transform: translateX(5px);
-}
-
-.footer-bottom {
-    text-align: center;
-    padding-top: 2rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-    font-size: 0.95rem;
-    opacity: 0.9;
-}
-
 
 @media (max-width: 1024px) {
     .FlujoE {
@@ -403,7 +368,6 @@
 
     .FlujoE-title {
         font-size: 2.2rem;
-        margin-top: 0;
     }
 
     .FlujoE-description {
@@ -662,7 +626,6 @@
     .footer-content {
         grid-template-columns: 1fr;
         gap: 2.5rem;
-        text-align: center;
     }
 
     .footer-section h3 {
