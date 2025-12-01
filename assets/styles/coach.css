@@ -22,7 +22,7 @@
 .FlujoE-description {
     font-size: 1.2rem;
     color: var(--text-dark);
-    margin-top: 0px;
+    margin-top: 0;
     animation: fadeInUp 1.3s ease forwards;
 }
 
@@ -75,7 +75,7 @@
 .servicio-card {
     background-color: white;
     padding: 3rem 2.5rem;
-    border-radius: 0px;
+    border-radius: 0;
     text-align: center;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
     transition: all 0.4s ease;

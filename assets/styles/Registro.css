@@ -190,7 +190,7 @@ body {
 }
 
 .illustration-section {
-    background: linear-gradient(135deg, #f5f5f5 0%, #e8f5f3 100%);
+    background: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
