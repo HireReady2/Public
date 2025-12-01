@@ -71,7 +71,7 @@ const observer = new IntersectionObserver((entries) => {
 
 // Aplicar animación a cards de planes y testimonios
 document.addEventListener('DOMContentLoaded', () => {
-    const cards = document.querySelectorAll('.plan-card, .testimonio-card, .control-card');
+    const cards = document.querySelectorAll('.plan-card, .testimonio-card, .control-card, .servicio-card');
 
     cards.forEach((card, index) => {
         card.style.opacity = '0';
