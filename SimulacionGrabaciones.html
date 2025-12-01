@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head100>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HireReady - Simula tu entrevista laboral con IA</title>
+    <!--favicon para el ícono de ventana de la página web-->
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.ico">
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <link rel="stylesheet" href="assets/styles/header.css">
+    <link rel="stylesheet" href="assets/styles/footer.css">
+    <link rel="stylesheet" href="assets/styles/SimulacionGrabaciones.css">
+</head100>
+
+<body100>
+    <div id="header"></div>
+
+    <!-- ======================= HERO100 SECTION ===================== -->
+    <section class="hero100">
+        <div class="hero100-inner">
+            <div class="hero100-left">
+                <h2>Simulaciones de entrevistas</h2>
+                <p>
+                    Practica respuestas, aprende a comunicar tu valor y reduce la
+                    ansiedad con una experiencia realista de entrevistas, feedback
+                    personalizado y métricas de progreso
+                </p>
+            </div>
+            <div class="hero100-right">
+                <img
+                        src="assets/images/Imagen Simulación Entrevistas.png"
+                        alt="Simulación IA"
+                />
+            </div>
+        </div>
+    </section>
+
+    <!-- ============= SECCIÓN: INTELIGENCIA ARTIFICIAL ========== -->
+    <section class="section100">
+        <h3>Inteligencia Artificial</h3>
+
+        <div class="features100">
+            <div>
+                <h4 class="feature100-title">Cómo practicar con IA en HireReady:</h4>
+
+                <ol class="list100-numbered">
+                    <li>Selecciona el tipo de entrevista y cargo al que aspiras</li>
+                    <li>
+                        Activa tu cámara y micrófono para una simulación realista
+                        <span class="note100">(Recomendado)</span>
+                    </li>
+                    <li>Responde a las preguntas generadas por nuestra IA avanzada</li>
+                    <li>
+                        Recibe feedback instantáneo sobre tu comunicación verbal y no
+                        verbal
+                    </li>
+                    <li>
+                        Revisa el análisis detallado y recomendaciones personalizadas
+                    </li>
+                </ol>
+
+                <h4 class="feature100-title" style="margin-top: 2rem">
+                    Ventajas de practicar con la IA
+                </h4>
+
+                <ul class="list100-bullets">
+                    <li>Disponibilidad 24/7 para practicar cuando quieras</li>
+                    <li>Feedback objetivo y basado en datos</li>
+                    <li>Ambiente seguro para cometer errores y mejorar</li>
+                    <li>Ahorro de tiempo y costos en comparación</li>
+                </ul>
+            </div>
+
+            <div class="phone100-mockup">
+                <img
+                        src="assets/images/Simulacion.png"
+                        alt="Simulación con inteligencia artificial en el móvil"
+                        class="phone100"
+                />
+            </div>
+        </div>
+    </section>
+
+    <!-- ================== FORMATOS DE SIMULACIÓN ================ -->
+    <section class="carousel100-section">
+        <h3>Formatos de simulación</h3>
+        <p class="carousel100-subtitle">Según el modo de práctica</p>
+
+        <div class="carousel100-container">
+            <div class="carousel100-wrapper">
+                <div class="carousel100-track" id="carouselTrack">
+                    <!-- Slide 1: Según el tipo de escenario -->
+                    <div class="carousel100-slide">
+                        <div class="scenario100-phones">
+                            <div class="scenario100-item">
+                                <h4 class="scenario100-title">Virtual</h4>
+                                <div class="scenario100-phone">
+                                    <img
+                                            src="assets/images/Virtual.png"
+                                            alt="Simulación de entrevista virtual"
+                                            style="width: 100%"
+                                    />
+                                </div>
+                            </div>
+
+                            <div class="scenario100-item">
+                                <h4 class="scenario100-title">Presencial</h4>
+                                <div class="scenario100-phone">
+                                    <img
+                                            src="assets/images/Presencial.png"
+                                            alt="Simulación de entrevista presencial"
+                                            style="width: 100%"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2: Según el modo de práctica -->
+                    <div class="carousel100-slide">
+                        <div class="scenario100-phones">
+                            <div class="scenario100-item">
+                                <h4 class="scenario100-title">Por voz</h4>
+                                <div class="scenario100-phone">
+                                    <img
+                                            src="assets/images/Simulacion por voz.png"
+                                            alt="Práctica de entrevista por voz"
+                                            style="width: 100%"
+                                    />
+                                </div>
+                            </div>
+
+                            <div class="scenario100-item">
+                                <h4 class="scenario100-title">Por texto</h4>
+                                <div class="scenario100-phone">
+                                    <img
+                                            src="assets/images/Simulacion por texto.png"
+                                            alt="Práctica de entrevista por texto"
+                                            style="width: 100%"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Flechas -->
+            <div class="carousel100-controls">
+                <button class="carousel100-btn" id="prevBtn">‹</button>
+                <button class="carousel100-btn" id="nextBtn">›</button>
+            </div>
+
+            <!-- Indicadores -->
+            <div class="carousel100-indicators" id="indicators"></div>
+        </div>
+    </section>
+
+    <!-- ======================= TEMPORIZADOR ===================== -->
+    <section class="timer100-section">
+        <h3 class="timer100-title">Temporizador</h3>
+        <p class="timer100-subtitle">
+            Elige la duración ideal para tus sesiones de práctica
+        </p>
+
+        <div class="timer100-options">
+            <!-- Celular izquierda -->
+            <div class="timer100-phone">
+                <img
+                        src="assets/images/Temporizador.png"
+                        alt="Ilustración de temporizador para práctica"
+                />
+            </div>
+
+            <!-- Card sesiones cortas -->
+            <div class="timer100-card">
+                <h4>Sesiones cortas <span>(5 - 20 minutos)</span></h4>
+                <ul class="timer100-list">
+                    <li>Ideales para respuestas específicas</li>
+                    <li>Perfecta para agendas ocupadas</li>
+                    <li>Mantienen alta la concentración</li>
+                    <li>Permiten la práctica diaria constante</li>
+                    <li>Menos fatiga mental</li>
+                    <li>Ideal para gente principiante</li>
+                </ul>
+            </div>
+
+            <!-- Card sesiones largas -->
+            <div class="timer100-card">
+                <h4>Sesiones largas <span>(45 - 60 minutos)</span></h4>
+                <ul class="timer100-list">
+                    <li>Más fidelidad a entrevistas completas reales</li>
+                    <li>Mayor profundidad en las respuestas</li>
+                    <li>Desarrollan resistencia mental</li>
+                    <li>Feedback más completo y detallado</li>
+                    <li>Mejor preparación para el día real</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== GUARDADO CONTINUO ================== -->
+    <section class="save100-section">
+        <h3>Guardado continuo</h3>
+        <p
+                style="
+        text-align: center;
+        color: #666;
+        margin-bottom: 2rem;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+      "
+        >
+            El progreso de tus sesiones está siempre protegido, recuerda en qué
+            posición sucumbiste y te ayuda a recordar qué tan progresado te la
+            muerte llevó en la sesión de entrevistas así que redactarás cuanto tu
+            estado.
+        </p>
+
+        <div class="save100-flow">
+            <div class="save100-step">
+                <div class="save100-phone">
+                    <img
+                            src="assets/images/Guardado Continuo 1.png"
+                            alt="Pantalla de inicio de sesión"
+                            style="width: 100%"
+                    />
+                </div>
+            </div>
+
+            <div class="save100-arrow">→</div>
+
+            <div class="save100-step">
+                <div class="save100-phone">
+                    <img
+                            src="assets/images/Guardado Continuo 2.png"
+                            alt="Pantalla mostrando progreso de preguntas"
+                            style="width: 100%"
+                    />
+                </div>
+            </div>
+
+            <div class="save100-arrow">→</div>
+
+            <div class="save100-step">
+                <div class="save100-phone">
+                    <img
+                            src="assets/images/Guardado Continuo 3.png"
+                            alt="Pantalla de resultados de la simulación"
+                            style="width: 100%"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer"></div>
+
+    <!-- ======================= SCRIPTS ========================== -->
+    <script src="assets/scripts/main.js"></script>
+    <script src="SimulacionGrabaciones.js"></script>
+</body100>
+</html>
