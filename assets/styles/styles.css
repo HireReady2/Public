@@ -143,10 +143,10 @@ body {
 }
 
 .caracteristicas-content {
-    display: grid;
+    display: flex;
     grid-template-columns: 1fr 1.2fr;
     gap: 5rem;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .caracteristicas-image {
@@ -396,4 +396,14 @@ body {
 .testimonio-role {
     color: #777;
     font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+    .caracteristicas-content {
+        flex-direction: column;
+    }
+
+    .planes-grid, .testimonios-grid {
+        grid-template-columns: 1fr;
+    }
 }

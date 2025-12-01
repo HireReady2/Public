@@ -82,26 +82,60 @@
     background-color: var(--light-green-bg);
 }
 
-.menu-toggle {
+/* Botón Hamburguesa */
+.btn-toogle {
     display: none;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
     background: none;
     border: none;
     cursor: pointer;
-    gap: 5px;
-    padding: 5px;
+    padding: 0;
+    z-index: 1002;
+    position: relative;
 }
 
-.menu-toggle span {
+.btn-toogle .line {
     width: 28px;
     height: 3px;
     background-color: var(--text-light);
-    transition: 0.3s;
     border-radius: 3px;
+    transition: all 0.3s ease;
+    position: absolute;
 }
 
-.menu-toggle:hover span {
+.btn-toogle .line.top {
+    top: 10px;
+}
+
+.btn-toogle .line.middle {
+    top: 18px;
+}
+
+.btn-toogle .line.bottom {
+    top: 26px;
+}
+
+.btn-toogle:hover .line {
     background-color: var(--light-green-bg);
+}
+
+/* Animación del botón hamburguesa cuando está activo */
+.btn-toogle.active .line.top {
+    top: 18px;
+    transform: rotate(45deg);
+}
+
+.btn-toogle.active .line.middle {
+    opacity: 0;
+}
+
+.btn-toogle.active .line.bottom {
+    top: 18px;
+    transform: rotate(-45deg);
 }
 
 /* Dropdown Navigation */
@@ -135,7 +169,6 @@
 .has-dropdown:hover > .dropdown {
     opacity: 1;
     visibility: visible;
-    transform: translateX(-50%) translateY(0);
 }
 
 .nav-menu .dropdown li {
@@ -170,3 +203,135 @@
     background: #2d6a5f;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
+
+/* ========== RESPONSIVE DESIGN ========== */
+
+@media screen and (max-width: 968px) {
+    .btn-toogle {
+        display: flex;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        flex-direction: column;
+        background-color: var(--primary-green);
+        width: 100%;
+        padding: 2rem 0;
+        gap: 0;
+        transition: left 0.4s ease;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        max-height: calc(100vh - 70px);
+        overflow-y: auto;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-menu li {
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .nav-menu > li > a {
+        display: block;
+        padding: 1rem 2rem;
+        width: 100%;
+    }
+
+    .nav-menu a:not(.btn-acceder)::after {
+        display: none;
+    }
+
+    /* Botón Acceder en móvil */
+    .btn-acceder {
+        display: inline-block;
+        margin: 1rem auto;
+        padding: 0.8rem 2rem;
+    }
+
+    /* Dropdown en móvil */
+    .has-dropdown {
+        position: relative;
+    }
+
+    .nav-menu .dropdown {
+        position: static;
+        opacity: 0;
+        visibility: hidden;
+        max-height: 0;
+        overflow: hidden;
+        transform: none;
+        background: #2d6a5f;
+        border-radius: 0;
+        border: none;
+        box-shadow: none;
+        padding: 0;
+        margin: 0;
+        transition: max-height 0.4s ease, opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    .has-dropdown.active > .dropdown {
+        opacity: 1;
+        visibility: visible;
+        max-height: 300px;
+        padding: 0.5rem 0;
+    }
+
+    .nav-menu .dropdown li {
+        border-bottom: none;
+    }
+
+    .nav-menu .dropdown a {
+        padding: 0.8rem 3rem;
+        margin: 0;
+        border-radius: 0;
+        font-size: 0.95rem;
+    }
+
+    .nav-menu .dropdown a:hover {
+        background: #245750;
+    }
+
+    /* Indicador de dropdown */
+    .has-dropdown > a::before {
+        content: '▼';
+        font-size: 0.7rem;
+        margin-left: 0.5rem;
+        transition: transform 0.3s ease;
+        display: inline-block;
+    }
+
+    .has-dropdown.active > a::before {
+        transform: rotate(180deg);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo {
+        font-size: 1.3rem;
+    }
+
+    .logo-icon {
+        width: 35px;
+        height: 25px;
+    }
+
+    .nav-menu {
+        padding-right: 1.5rem;
+    }
+
+    .nav-menu > li > a {
+        padding: 0.9rem 1.5rem;
+        font-size: 0.95rem;
+    }
+
+    .nav-menu .dropdown a {
+        padding: 0.7rem 2.5rem;
+        font-size: 0.9rem;
+    }
+}
+
