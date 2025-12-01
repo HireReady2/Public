@@ -368,11 +368,7 @@
     opacity: 0.9;
 }
 
-/* ============================================ */
-/* RESPONSIVE DESIGN */
-/* ============================================ */
 
-/* Tablets grandes y pantallas medianas (max-width: 1024px) */
 @media (max-width: 1024px) {
     .FlujoE {
         gap: 5rem;
@@ -397,7 +393,6 @@
     }
 }
 
-/* Tablets (max-width: 900px) */
 @media (max-width: 900px) {
     .FlujoE {
         flex-direction: column;
@@ -493,7 +488,6 @@
     }
 }
 
-/* Móviles grandes y tablets pequeñas (max-width: 768px) */
 @media (max-width: 768px) {
     .FlujoE {
         gap: 2rem;
@@ -681,7 +675,6 @@
     }
 }
 
-/* Móviles estándar (max-width: 480px) */
 @media (max-width: 480px) {
     .FlujoE {
         padding: 2rem 1rem;
@@ -847,7 +840,6 @@
     }
 }
 
-/* Móviles pequeños (max-width: 360px) */
 @media (max-width: 360px) {
     .FlujoE {
         padding: 1.5rem 0.8rem;
