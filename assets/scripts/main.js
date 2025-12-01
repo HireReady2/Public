@@ -170,3 +170,42 @@ window.addEventListener('resize', () => {
     }
     windowWidth = window.innerWidth;
 });
+
+// ========== MODAL DE INICIO DE SESIÓN ==========
+
+const modalOverlay = document.getElementById('modalRegistro');
+const closeModalBtn = document.getElementById('closeModal');
+const btnAcceder = document.getElementById('btnAcceder');
+
+if (btnAcceder) {
+    btnAcceder.addEventListener('click', (e) => {
+        e.preventDefault();
+        modalOverlay.classList.add('active');
+        document.body.style.overflow = 'hidden'; // Bloquear scroll
+    });
+}
+
+if (closeModalBtn) {
+    closeModalBtn.addEventListener('click', () => {
+        modalOverlay.classList.remove('active');
+        document.body.style.overflow = 'auto'; // Restaurar scroll
+    });
+}
+
+
+if (modalOverlay) {
+    modalOverlay.addEventListener('click', (e) => {
+        if (e.target === modalOverlay) {
+            modalOverlay.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+    });
+}
+
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modalOverlay && modalOverlay.classList.contains('active')) {
+        modalOverlay.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    }
+});
