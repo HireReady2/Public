@@ -1,0 +1,612 @@
+/* HERO100 SECTION */
+.hero100 {
+    background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
+    padding: 4rem 1.5rem;
+}
+
+/* Caja centrada */
+.hero100-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+/* Lado izquierdo: texto */
+.hero100-left {
+    flex: 1;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero100-left h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    color: #2d6a5f;
+}
+
+.hero100-left p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Lado derecho: imagen */
+.hero100-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.hero100-right img {
+    width: 100%;
+    max-width: 380px;
+    height: auto;
+}
+
+/* SECTION - INTELIGENCIA ARTIFICIAL */
+.section100 {
+    background-color: #fff;
+    padding: 3rem 2rem;
+    margin: 0;
+}
+
+.section100 h3 {
+    color: #2d6a5f;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.features100 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.feature100-list {
+    list-style: none;
+}
+
+.feature100-list li {
+    padding: 0.8rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    color: #555;
+}
+
+.feature100-list li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #2d6a5f;
+    font-weight: bold;
+}
+
+/* Título de cada bloque */
+.feature100-title {
+    color: #166a5f;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+/* Lista numerada */
+.list100-numbered {
+    list-style: decimal;
+    padding-left: 1.5rem;
+    margin-bottom: 2rem;
+    color: #333333;
+}
+
+.list100-numbered li {
+    margin-bottom: 0.7rem;
+    line-height: 1.6;
+}
+
+/* Lista con viñetas */
+.list100-bullets {
+    list-style: disc;
+    padding-left: 1.5rem;
+    color: #333333;
+}
+
+.list100-bullets li {
+    margin-bottom: 0.7rem;
+    line-height: 1.6;
+}
+
+/* Texto "(Recomendado)" */
+.note100 {
+    font-size: 0.9rem;
+    color: #555555;
+}
+
+.phone100-mockup {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.phone100 {
+    width: 250px;
+    height: auto;
+    display: inline-block;
+}
+
+/* CAROUSEL SECTION */
+.carousel100-section {
+    background: #dce9e7;
+    padding: 4rem 2rem;
+}
+
+.carousel100-section h3 {
+    color: #166a5f;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.carousel100-subtitle {
+    text-align: center;
+    color: #166a5f;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.carousel100-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    background: #ffffff;
+    border-radius: 24px;
+    border: 2px solid #166a5f;
+    padding: 3rem 3rem 3.5rem;
+}
+
+.carousel100-wrapper {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.carousel100-track {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
+}
+
+.carousel100-slide {
+    min-width: 100%;
+    max-width: 100%;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.scenario100-phones {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.scenario100-item {
+    text-align: center;
+}
+
+.scenario100-title {
+    color: #166a5f;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.scenario100-phone {
+    width: 220px;
+    padding: 0;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.carousel100-controls {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.carousel100-btn {
+    pointer-events: auto;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: 2px solid #c4c4c4;
+    background: #f5f5f5;
+    cursor: pointer;
+    font-size: 2rem;
+    color: #888888;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    transition: all 0.2s ease;
+}
+
+.carousel100-btn:hover {
+    background: #e9e9e9;
+}
+
+.carousel100-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 2rem;
+}
+
+.indicator100 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ccc;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.indicator100.active {
+    background: #166a5f;
+    width: 30px;
+    border-radius: 5px;
+}
+
+.scenario100-type {
+    text-align: center;
+}
+
+.scenario-type h4 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+/* TIMER SECTION */
+.timer100-section {
+    background-color: #ffffff;
+    padding: 4rem 2rem;
+}
+
+.timer100-title {
+    text-align: center;
+    color: #166a5f;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.timer100-subtitle {
+    text-align: center;
+    color: #166a5f;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+
+.timer100-options {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 2.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.timer100-phone {
+    flex: 0 0 260px;
+    display: flex;
+    justify-content: center;
+}
+
+.timer100-phone img {
+    width: 100%;
+    max-width: 260px;
+    border-radius: 28px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+}
+
+.timer100-card {
+    flex: 1 1 260px;
+    background: #ffffff;
+    border-radius: 20px;
+    border: 2px solid #166a5f;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    padding: 2rem 2.5rem;
+}
+
+.timer100-card h4 {
+    color: #166a5f;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.timer100-card h4 span {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.timer100-list {
+    list-style: disc;
+    padding-left: 1.3rem;
+    color: #333;
+}
+
+.timer100-list li {
+    margin-bottom: 0.6rem;
+    line-height: 1.6;
+}
+
+/* SAVE SECTION */
+.save100-section {
+    background-color: #fff;
+    padding: 3rem 2rem;
+    margin: 0;
+}
+
+.save100-section h3 {
+    color: #2d6a5f;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.save100-flow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.save100-step {
+    flex: 0 0 auto;
+}
+
+.save100-phone {
+    width: 220px;
+    padding: 1rem;
+    background: white;
+    border: 3px solid #e0e0e0;
+    border-radius: 25px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.save100-arrow {
+    font-size: 3rem;
+    color: #2d6a5f;
+    font-weight: bold;
+}
+
+
+/* ========== RESPONSIVE ========== */
+
+@media (max-width: 900px) {
+    .hero100-inner {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 1.5rem;
+    }
+
+    .hero100-left {
+        text-align: center;
+    }
+
+    .hero100-left h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero100-left p {
+        font-size: 1.1rem;
+    }
+
+    /* SECCIÓN INTELIGENCIA ARTIFICIAL - RESPONSIVE */
+    .features100 {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    /* La imagen del celular se mueve al final en móvil */
+    .phone100-mockup {
+        order: 2;
+        margin-top: 2rem;
+    }
+
+    .phone100 {
+        width: 280px;
+        max-width: 100%;
+    }
+
+    .timer100-options {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .timer100-card {
+        width: 100%;
+        max-width: 480px;
+    }
+
+    .carousel100-container {
+        padding: 2rem 1.5rem 2.5rem;
+    }
+
+    .scenario100-phones {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .scenario100-phone {
+        width: 200px;
+    }
+
+    .carousel100-btn {
+        width: 48px;
+        height: 48px;
+        font-size: 1.5rem;
+    }
+}
+
+/* Móviles pequeños */
+@media (max-width: 768px) {
+    .hero100 {
+        padding: 3rem 1rem;
+    }
+
+    .hero100-left h2 {
+        font-size: 1.6rem;
+    }
+
+    .hero100-left p {
+        font-size: 1rem;
+    }
+
+    .section100 {
+        padding: 2rem 1rem;
+    }
+
+    .section100 h3 {
+        font-size: 1.3rem;
+    }
+
+    .feature100-title {
+        font-size: 1.2rem;
+    }
+
+    .list100-numbered,
+    .list100-bullets {
+        padding-left: 1.2rem;
+        font-size: 0.95rem;
+    }
+
+    .phone100 {
+        width: 240px;
+    }
+
+    .carousel100-section {
+        padding: 3rem 1rem;
+    }
+
+    .carousel100-section h3 {
+        font-size: 1.6rem;
+    }
+
+    .carousel100-subtitle {
+        font-size: 1rem;
+    }
+
+    .timer100-section {
+        padding: 3rem 1rem;
+    }
+
+    .timer100-title {
+        font-size: 1.6rem;
+    }
+
+    .timer100-subtitle {
+        font-size: 1rem;
+    }
+
+    .timer100-phone img {
+        max-width: 220px;
+    }
+
+    .timer100-card {
+        padding: 1.5rem 1.8rem;
+    }
+
+    .save100-section {
+        padding: 2rem 1rem;
+    }
+
+    .save100-flow {
+        flex-direction: column;
+    }
+
+    .save100-arrow {
+        transform: rotate(90deg);
+        font-size: 2.5rem;
+    }
+
+    .save100-phone {
+        width: 200px;
+    }
+}
+
+/* Móviles muy pequeños */
+@media (max-width: 480px) {
+    .hero100-left h2 {
+        font-size: 1.4rem;
+    }
+
+    .hero100-left p {
+        font-size: 0.95rem;
+    }
+
+    .hero100-right img {
+        max-width: 280px;
+    }
+
+    .phone100 {
+        width: 200px;
+    }
+
+    .carousel100-container {
+        padding: 1.5rem 1rem 2rem;
+    }
+
+    .scenario100-phone {
+        width: 180px;
+    }
+
+    .carousel100-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1.3rem;
+    }
+
+    .timer100-phone img {
+        max-width: 200px;
+    }
+
+    .timer100-card h4 {
+        font-size: 1.3rem;
+    }
+
+    .save100-phone {
+        width: 180px;
+    }
+}
