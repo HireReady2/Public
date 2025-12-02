@@ -12,44 +12,49 @@
     <link rel="stylesheet" href="assets/styles/Registro.css">
 </head>
 <body>
+
+<a href="index.html" class="back-button" aria-label="Volver a inicio">
+    <span>Volver</span>
+</a>
+
 <div class="container">
     <div class="signup-section">
-        <h1>Sign up with us</h1>
+        <h1>Regístrate con nosotros</h1>
         <p class="login-text">
-            Already have an account? <a href="#" class="login-link">Login</a>
+            Ya tienes una cuenta? <a href="InicioSesion.html" class="login-link">Iniciar Sesión</a>
         </p>
 
         <form class="signup-form" id="signupForm">
             <div class="form-group">
-                <label for="fullName">Full Name</label>
+                <label for="fullName">Nombre Completo</label>
                 <input
                         type="text"
                         id="fullName"
                         name="fullName"
-                        placeholder="Enter your full name"
+                        placeholder="Ingresa tu nombre completo"
                         required
                 />
             </div>
 
             <div class="form-group">
-                <label for="email">Email Address</label>
+                <label for="email">Correo Electrónico</label>
                 <input
                         type="email"
                         id="email"
                         name="email"
-                        placeholder="Enter your email address"
+                        placeholder="Ingresa tu correo electrónico"
                         required
                 />
             </div>
 
             <div class="form-group">
-                <label for="password">Password</label>
+                <label for="password">Contraseña</label>
                 <div class="password-input">
                     <input
                             type="password"
                             id="password"
                             name="password"
-                            placeholder="Create your password"
+                            placeholder="Crea tu contraseña"
                             required
                     />
                     <button type="button" class="toggle-password" id="togglePassword">
@@ -59,10 +64,10 @@
                 </div>
             </div>
 
-            <button type="submit" class="btn-create">Create Account</button>
+            <button type="submit" class="btn-create">Crear Cuenta</button>
 
             <div class="divider">
-                <span>Or</span>
+                <span>O</span>
             </div>
 
             <div class="social-buttons">
