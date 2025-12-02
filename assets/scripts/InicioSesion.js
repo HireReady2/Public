@@ -1,72 +1,58 @@
-// Toggle password visibility
-const togglePassword = document.getElementById("togglePassword");
-const passwordInput = document.getElementById("password");
+// Cerrar modal desde dentro del iframe (comunicación con el parent)
+const closeBtn = document.querySelector('.close-btn');
 
-togglePassword.addEventListener("click", function () {
-    const type =
-        passwordInput.getAttribute("type") === "password" ? "text" : "password";
-    passwordInput.setAttribute("type", type);
-
-    // Change icon (optional - you can add different SVG for eye-slash)
-    if (type === "text") {
-        this.style.color = "#4A7FFF";
-    } else {
-        this.style.color = "#999";
-    }
-});
-
-// Form submission handler
-const signupForm = document.getElementById("signupForm");
-
-signupForm.addEventListener("submit", function (e) {
-    e.preventDefault();
-
-    const fullName = document.getElementById("fullName").value;
-    const email = document.getElementById("email").value;
-    const password = document.getElementById("password").value;
-
-    // Basic validation
-    if (fullName.trim() === "" || email.trim() === "" || password.trim() === "") {
-        alert("Please fill in all fields");
-        return;
-    }
-
-    if (password.length < 6) {
-        alert("Password must be at least 6 characters long");
-        return;
-    }
-
-    // Here you would typically send the data to your server
-    console.log("Form submitted:", { fullName, email, password });
-    alert("Account created successfully!");
-
-    // Reset form
-    signupForm.reset();
-});
-
-// Social button handlers
-const googleBtn = document.querySelector(".btn-google");
-const linkedinBtn = document.querySelector(".btn-linkedin");
-
-googleBtn.addEventListener("click", function () {
-    console.log("Sign up with Google clicked");
-    alert("Google sign up functionality would be implemented here");
-});
-
-linkedinBtn.addEventListener("click", function () {
-    console.log("Sign up with LinkedIn clicked");
-    alert("LinkedIn sign up functionality would be implemented here");
-});
-
-// Add input focus animation
-const inputs = document.querySelectorAll("input");
-
-inputs.forEach((input) => {
-    input.addEventListener("focus", function () {
-        this.parentElement.style.transform = "scale(1.02)";
+if (closeBtn) {
+    closeBtn.addEventListener('click', () => {
+        // Comunicar al parent para cerrar el modal
+        window.parent.postMessage('closeModal', '*');
     });
+}
 
-    input.addEventListener("blur", function () {
-        this.parentElement.style.transform = "scale(1)";
+
+const googleSignin = document.querySelector('.google-signin');
+
+googleSignin.addEventListener('click', () => {
+    console.log('Iniciando sesión con Google...');
+    // Aquí implementarías la lógica de autenticación con Google
+    alert('Función de inicio de sesión con Google');
+    // Ejemplo: window.location.href = '/auth/google';
+});
+
+
+const userCard = document.querySelector('.user-card');
+
+userCard.addEventListener('click', () => {
+    console.log('Seleccionando cuenta de usuario...');
+    // Aquí implementarías la lógica para seleccionar esta cuenta
+    alert('Iniciando sesión como User@google.com');
+});
+
+
+const continueBtn = document.querySelector('.continue-btn');
+
+continueBtn.addEventListener('click', () => {
+    console.log('Continuando como invitado...');
+
+    alert('Accediendo como invitado');
+
+    window.parent.postMessage('closeModal', '*');
+});
+
+const interactiveElements = document.querySelectorAll('.google-signin, .user-card, .continue-btn');
+
+interactiveElements.forEach(element => {
+    element.addEventListener('mouseenter', function() {
+        this.style.transition = 'all 0.3s ease';
+    });
+});
+
+const disclaimerLinks = document.querySelectorAll('.disclaimer a');
+
+disclaimerLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        console.log('Abriendo:', link.textContent);
+        // Aquí abrirías las páginas de términos o privacidad
+        alert(`Abriendo ${link.textContent}`);
     });
 });

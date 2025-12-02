@@ -7,7 +7,7 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;
-    background: rgba(0, 0, 0, 0.5);
+    background: linear-gradient(135deg, #D9E8E5 0%, #E8F0ED 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,7 +22,7 @@ body {
     max-width: 480px;
     padding: 32px;
     position: relative;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 32px rgba(45, 106, 95, 0.15);
 }
 
 .close-btn {
@@ -31,20 +31,23 @@ body {
     right: 20px;
     background: none;
     border: none;
-    font-size: 24px;
+    font-size: 28px;
     color: #666;
     cursor: pointer;
-    width: 32px;
-    height: 32px;
+    width: 36px;
+    height: 36px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    transition: background 0.2s;
+    transition: all 0.3s ease;
+    line-height: 1;
 }
 
 .close-btn:hover {
     background: #f0f0f0;
+    color: #2D6A5F;
+    transform: rotate(90deg);
 }
 
 .header {
@@ -52,12 +55,13 @@ body {
 }
 
 .header h2 {
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: 600;
     color: #333;
 }
 
 .header span {
+    font-weight: 400;
     color: #999;
 }
 
@@ -65,34 +69,51 @@ body {
     display: flex;
     align-items: center;
     gap: 12px;
-    padding: 16px;
-    border: 1px solid #e0e0e0;
+    padding: 14px 16px;
+    border: 2px solid #e0e0e0;
     border-radius: 8px;
     background: white;
     margin-bottom: 24px;
     cursor: pointer;
-    transition: background 0.2s;
+    transition: all 0.3s ease;
 }
 
 .google-signin:hover {
     background: #f8f9fa;
+    border-color: #2D6A5F;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(45, 106, 95, 0.1);
 }
 
 .google-icon {
     width: 24px;
     height: 24px;
+    flex-shrink: 0;
 }
 
 .google-signin span {
-    font-size: 16px;
+    font-size: 15px;
     color: #333;
     font-weight: 500;
 }
 
 .divider {
     height: 1px;
-    background: #e0e0e0;
+    background: linear-gradient(90deg, transparent, #e0e0e0, transparent);
     margin: 24px 0;
+    position: relative;
+}
+
+.divider::after {
+    content: 'o';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 0 12px;
+    color: #999;
+    font-size: 14px;
 }
 
 .user-card {
@@ -100,14 +121,28 @@ body {
     align-items: center;
     gap: 16px;
     margin-bottom: 24px;
+    padding: 16px;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.user-card:hover {
+    border-color: #2D6A5F;
+    background: #f8f9fa;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(45, 106, 95, 0.1);
 }
 
 .user-avatar {
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    background: #333;
+    background: linear-gradient(135deg, #2D6A5F, #4A9C8A);
     overflow: hidden;
+    flex-shrink: 0;
+    border: 2px solid #D9E8E5;
 }
 
 .user-avatar img {
@@ -118,9 +153,9 @@ body {
 
 .user-info h3 {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 600;
     color: #333;
-    margin-bottom: 4px;
+    margin-bottom: 2px;
 }
 
 .user-info p {
@@ -131,32 +166,70 @@ body {
 .continue-btn {
     width: 100%;
     padding: 16px;
-    background: #14856e;
+    background: linear-gradient(135deg, #2D6A5F 0%, #3D8275 100%);
     color: white;
     border: none;
     border-radius: 28px;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 600;
     cursor: pointer;
-    transition: background 0.2s;
-    margin-bottom: 16px;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(45, 106, 95, 0.3);
 }
 
 .continue-btn:hover {
-    background: #117059;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(45, 106, 95, 0.4);
+    background: linear-gradient(135deg, #3D8275 0%, #4A9C8A 100%);
+}
+
+.continue-btn:active {
+    transform: translateY(-1px);
 }
 
 .disclaimer {
     font-size: 13px;
     color: #666;
-    line-height: 1.6;
+    line-height: 1.7;
+    text-align: center;
 }
 
 .disclaimer a {
-    color: #14856e;
+    color: #2D6A5F;
     text-decoration: none;
+    font-weight: 500;
 }
 
 .disclaimer a:hover {
     text-decoration: underline;
+    color: #3D8275;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .modal {
+        padding: 24px;
+        max-width: 100%;
+    }
+
+    .header h2 {
+        font-size: 18px;
+    }
+
+    .google-signin span {
+        font-size: 14px;
+    }
+
+    .close-btn {
+        top: 16px;
+        right: 16px;
+        width: 32px;
+        height: 32px;
+        font-size: 24px;
+    }
 }

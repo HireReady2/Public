@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign in - ExploreWander</title>
+    <title>Iniciar Sesión - HireReady</title>
     <link rel="stylesheet" href="assets/styles/InicioSesion.css" />
 </head>
 <body>
 <div class="modal">
-    <button class="close-btn">×</button>
+    <button class="close-btn" aria-label="Cerrar">×</button>
 
     <div class="header">
         <h2><strong>Sign in</strong> <span>or join another way</span></h2>
     </div>
 
-    <div class="google-signin">
+    <button class="google-signin">
         <svg class="google-icon" viewBox="0 0 24 24">
             <path
                     fill="#4285F4"
@@ -34,7 +34,7 @@
             />
         </svg>
         <span>Sign in to ExploreWander with Google</span>
-    </div>
+    </button>
 
     <div class="divider"></div>
 
@@ -42,7 +42,7 @@
         <div class="user-avatar">
             <img
                     src="https://api.dicebear.com/7.x/avataaars/svg?seed=Bernard"
-                    alt="user"
+                    alt="User avatar"
             />
         </div>
         <div class="user-info">
@@ -51,9 +51,7 @@
         </div>
     </div>
 
-    <button class="continue-btn">
-        Continuar como invitado
-    </button>
+    <button class="continue-btn">Continuar como invitado</button>
 
     <p class="disclaimer">
         To create your account, Google will share your name, email address, and

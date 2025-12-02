@@ -209,3 +209,15 @@ document.addEventListener('keydown', (e) => {
         document.body.style.overflow = 'auto';
     }
 });
+
+
+// Escuchar mensajes del iframe para cerrar el modal
+window.addEventListener('message', (event) => {
+    if (event.data === 'closeModal') {
+        const modalOverlay = document.getElementById('modalRegistro');
+        if (modalOverlay) {
+            modalOverlay.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+    }
+});
